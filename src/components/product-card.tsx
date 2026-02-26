@@ -85,7 +85,7 @@ export default function ProductCard({
   const { addToCart } = useCart()
 
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden p-6">
+    <div className="bg-background rounded-2xl shadow-md overflow-hidden p-6">
 
       {/* Product Image */}
       <div className="relative h-48 w-full mb-4">
@@ -123,7 +123,7 @@ export default function ProductCard({
           onClick={() =>
             setQuantity((q) => Math.max(1, q - 1))
           }
-          className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300"
+          className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           -
         </button>
@@ -132,7 +132,7 @@ export default function ProductCard({
 
         <button
           onClick={() => setQuantity((q) => q + 1)}
-          className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300"
+          className="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700"
         >
           +
         </button>
@@ -148,7 +148,7 @@ export default function ProductCard({
             quantity,
           })
         }
-        className="mt-5 w-full bg-orange-500 hover:bg-orange-600 text-white"
+        className="mt-5 w-full bg-orange-500 hover:bg-orange-600 text-white dark:bg-orange-600 dark:hover:bg-orange-700"
       >
         Add to Cart
       </Button>

@@ -121,7 +121,7 @@ export default function Navbar() {
   if (!mounted) return null
 
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 border-b bg-[#f4ece4] backdrop-blur-md">
+    <nav className="sticky top-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 border-b bg-background backdrop-blur-md">
 
       {/* Logo */}
       <a href="#home">

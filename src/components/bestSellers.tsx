@@ -2,7 +2,7 @@ import ProductCard from "./product-card"
 
 export default function BestSellers() {
   return (
-    <section className="py-20 bg-[#f4ece4]">
+    <section className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-6">
 
         <h2 className="text-3xl font-bold text-center text-orange-500 mb-12">

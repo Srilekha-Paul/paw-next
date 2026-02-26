@@ -52,7 +52,7 @@ export default function ContactSection() {
   }
 
   return (
-   <section className="bg-[#e9d8c7] py-16">
+   <section className="bg-background py-16">
   <div className="max-w-5xl mx-auto px-6">
         {/* Title */}
         <div className="text-center mb-10">
