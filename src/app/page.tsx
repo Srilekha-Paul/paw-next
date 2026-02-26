@@ -7,20 +7,31 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-20 text-center">
+      <section id="home" className="py-20 text-center">
+      
         <h1 className="text-4xl font-bold text-orange-500">
           Healthy Food for Happy Dogs
         </h1>
       </section>
 
       {/* Best Sellers Section */}
+      <section id="products">
       <BestSellers />
+      </section>
 
-      <AboutSection />  {/* About Us Section */}
+      {/* About Us Section */}
+       <section id="about">
+      <AboutSection />
+      </section>
 
+      {/* Contact Section */}
+       <section id="contact">
       <ContactSection />
-
-      <Footer />
+      </section>
+      
+       <Footer />
+     
+     
     </>
   )
 }
