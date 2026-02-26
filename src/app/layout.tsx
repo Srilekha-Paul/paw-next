@@ -42,11 +42,46 @@
 //   )
 // }
 
-"use client"
+
+
+
+// "use client"
+// import { CartProvider } from "@/context/CartContext"
+// import "./globals.css"
+// import { ThemeProvider } from "next-themes"
+// import Navbar from "@/components/navbar"
+
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode
+// }) {
+//   return (
+//     <html lang="en" suppressHydrationWarning>
+//       <body>
+//         <ThemeProvider attribute="class" defaultTheme="light">
+//           <Navbar />
+//           {children}
+//         </ThemeProvider>
+
+//           <CartProvider>
+//           {children}
+//        </CartProvider>
+//       </body>
+//     </html>
+//   )
+// }
+
+
 
 import "./globals.css"
-import { ThemeProvider } from "next-themes"
 import Navbar from "@/components/navbar"
+import { CartProvider } from "@/context/CartContext"
+
+export const metadata = {
+  title: "PawBite",
+  description: "Healthy food for happy dogs",
+}
 
 export default function RootLayout({
   children,
@@ -54,12 +89,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <CartProvider>
           <Navbar />
           {children}
-        </ThemeProvider>
+        </CartProvider>
       </body>
     </html>
   )
