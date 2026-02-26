@@ -1,3 +1,4 @@
+import AboutSection from "@/components/AboutSection"
 import BestSellers from "@/components/bestSellers"
 
 export default function Home() {
@@ -12,6 +13,9 @@ export default function Home() {
 
       {/* Best Sellers Section */}
       <BestSellers />
+
+      <AboutSection />  {/* About Us Section */}
     </>
   )
 }
+  
