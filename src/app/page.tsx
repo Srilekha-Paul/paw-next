@@ -2,7 +2,7 @@ import AboutSection from "@/components/AboutSection"
 import BestSellers from "@/components/bestSellers"
 import ContactSection from "@/components/ContactSection"
 import Footer from "@/components/Footer"
-
+import AskQuestionSection from "@/components/ui/AskQuestionSection"
 export default function Home() {
   return (
     <>
@@ -51,6 +51,11 @@ export default function Home() {
         <AboutSection />
       </section>
 
+         {/* ASK QUESTIONS */}
+      <section id="ask-question">
+        <AskQuestionSection />
+      </section>
+
       {/* CONTACT */}
       <section id="contact">
         <ContactSection />
@@ -59,6 +64,7 @@ export default function Home() {
       {/* FOOTER */}
       <Footer />
 
+   
     </>
   )
 }
